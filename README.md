@@ -1,0 +1,1 @@
+# haawking-miz702n-board
