@@ -1,1 +1,1 @@
-# haawking-miz702n-board
+# haawking-dsc28027-board
