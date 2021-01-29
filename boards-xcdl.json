@@ -1,0 +1,51 @@
+{
+	"schemaVersion": "0.2.0",
+	"license": "MIT",
+	"copyright": "© 2017 Liviu Ionescu",
+	"boards": {
+		"dsc28027": {
+			"displayName": "Haawking DSC28027 Board",
+			"description": "The Haawking DSC28027 Board is an Arduino-Compatible development kit featuring the Freedom E310, the industry’s first commercially available RISC-V SoC.",
+			"supplier": {
+				"displayName": "Haawking",
+				"id": "1"
+			},
+			"revision": "A01",
+			"url": "https://www.sifive.com/products/hifive1/",
+			"orderForm": "https://www.crowdsupply.com/sifive/hifive1/",
+			"installedDevice": {
+				"supplier": {
+					"displayName": "Haawking",
+					"id": "1"
+				},
+				"name": "dsc28027"
+			},
+			"compatibleDevices": [],
+			"features": {
+				"flash": {
+					"size": "128 Mb",
+					"interface": "spi0",
+					"memoryRegion": "rom"
+				},
+				"hfxtal": "16 MHz",
+				"lfxtal": "32768 Hz"
+			},
+			"debug": {
+				"interface": "ftdi",
+				"connector": "micro-usb",
+				"openocd": "-f &quot;board/haawking-dsc28027.cfg&quot;",
+				"jlink": {
+				    "device": "dsc28027"
+				}
+			},
+			"compiler": {
+				"headers": [
+					"<DSC28027_headers/include/DSC28027_Device.h>"
+				],
+				"defines": [
+					"HAAWKING_DSC28027_BOARD"
+				]
+			}
+		}
+	}
+}
